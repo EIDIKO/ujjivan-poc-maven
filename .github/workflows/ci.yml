@@ -5,20 +5,14 @@ on:
 env:
  BAR_STORE: target\SamplApp-1.0.bar
 jobs:
-  build:
+  ACE-CI:
     runs-on: self-hosted
     steps:
       - uses: actions/checkout@v2
-      - name: Set up JDK 11
-        uses: actions/setup-java@v2
-        with:
-          java-version: '11'
-          distribution: 'adopt'
       - name: Building bar file
         run: |
           mvn clean package
-          echo $GITHUB_WORKSPACE${{ env.BAR_STORE }}
-      - name: Upload package
+      - name: Upload bar file ZIP package
         uses: actions/upload-artifact@v2
         with:
           name: ace-package
