@@ -3,7 +3,7 @@ on:
   push:
     branches: [ main ]
 env:
- BAR_STORE: C:\Users\tonda\IBM\ACET12\workspace\SamplApp\target\SamplApp-1.0.bar
+ BAR_STORE: SamplApp-1.0.bar
 jobs:
   build:
     runs-on: self-hosted
