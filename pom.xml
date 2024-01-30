@@ -17,7 +17,7 @@
 		<ace.arg2>-data</ace.arg2>
 		<ace.arg3>C:\Users\tonda\Downloads\SampleIIBApp</ace.arg3>
 		<ace.arg4>-b</ace.arg4>
-		<ace.arg5>${project.basedir}\SamplApp-1.0.bar</ace.arg5>
+		<ace.arg5>${project.basedir}\target\SamplApp-1.0.bar</ace.arg5>
 		<ace.arg6>-a</ace.arg6>
 		<ace.arg7>SamplApp</ace.arg7>
 		<ace.arg8>EIDIKO-UJJIVAN-TEST</ace.arg8>
