@@ -23,3 +23,8 @@ jobs:
           distribution: 'adopt'
       - name: Building bar file
         run: mvn clean package
+      - name: Upload package
+        uses: actions/upload-artifact@v2
+        with:
+          name: samplapp-package
+          path: C:\Users\tonda\IBM\ACET12\workspace\SamplApp\target\SamplApp-1.0.bar
