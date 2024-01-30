@@ -20,7 +20,7 @@
 		<ace.arg5>${project.basedir}\target\SamplApp-1.0.bar</ace.arg5>
 		<ace.arg6>-a</ace.arg6>
 		<ace.arg7>SamplApp</ace.arg7>
-		<ace.arg8>EIDIKO-UJJIVAN-TEST</ace.arg8>
+		<ace.arg8>EIDIKO-UJJIVAN-DEMO</ace.arg8>
 	</properties>
 	<build>
 		<plugins>
