@@ -3,7 +3,7 @@ on:
   push:
     branches: [ main ]
 env:
- BAR_STORE: SamplApp-1.0.bar
+ BAR_STORE: $GITHUB_WORKSPACE\target\SamplApp-1.0.bar
 jobs:
   build:
     runs-on: self-hosted
@@ -19,5 +19,5 @@ jobs:
       - name: Upload package
         uses: actions/upload-artifact@v2
         with:
-          name: samplapp-package
+          name: ace-package
           path: ${{ env.BAR_STORE }}
