@@ -3,7 +3,7 @@ on:
   push:
     branches: [ main ]
 env:
- BAR_STORE: $GITHUB_WORKSPACE\target\SamplApp-1.0.bar
+ BAR_STORE: \target\SamplApp-1.0.bar
 jobs:
   build:
     runs-on: self-hosted
@@ -15,9 +15,11 @@ jobs:
           java-version: '11'
           distribution: 'adopt'
       - name: Building bar file
-        run: mvn clean package
+        run: |
+          mvn clean package
+          echo $GITHUB_WORKSPACE${{ env.BAR_STORE }}
       - name: Upload package
         uses: actions/upload-artifact@v2
         with:
           name: ace-package
-          path: ${{ env.BAR_STORE }}
+          path: $GITHUB_WORKSPACE${{ env.BAR_STORE }}
