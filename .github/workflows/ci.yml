@@ -1,0 +1,25 @@
+name: BarCreation-CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+#env:
+ #BAR_CREATION: /home/desk-144/Documents/ace-12.0.2.0/tools/mqsicreatebar
+ #BAR_STORE: /home/desk-144/Templates
+
+ 
+jobs:
+  build:
+    runs-on: self-hosted
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up JDK 11
+        uses: actions/setup-java@v2
+        with:
+          java-version: '11'
+          distribution: 'adopt'
+      - name: Building bar file
+        run: mvn clean package
