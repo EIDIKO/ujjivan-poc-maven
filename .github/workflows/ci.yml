@@ -1,16 +1,9 @@
-name: BarCreation-CI
-
+name: EIDIKO-ACE-CI
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
-
-#env:
- #BAR_CREATION: /home/desk-144/Documents/ace-12.0.2.0/tools/mqsicreatebar
- #BAR_STORE: /home/desk-144/Templates
-
- 
+env:
+ BAR_STORE: C:\Users\tonda\IBM\ACET12\workspace\SamplApp\target\SamplApp-1.0.bar
 jobs:
   build:
     runs-on: self-hosted
@@ -27,4 +20,4 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: samplapp-package
-          path: C:\Users\tonda\IBM\ACET12\workspace\SamplApp\target\SamplApp-1.0.bar
+          path: $BAR_STORE
