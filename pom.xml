@@ -20,7 +20,7 @@
 		<ace.arg5>C:\Users\tonda\IBM\ACET12\workspace\SamplApp\target\SamplApp-1.0.bar</ace.arg5>
 		<ace.arg6>-a</ace.arg6>
 		<ace.arg7>SamplApp</ace.arg7>
-		<ace.arg7>EIDIKO-UJJIVAN</ace.arg7>
+		<ace.arg7>EIDIKO-UJJIVAN-TEST</ace.arg7>
 	</properties>
 	<build>
 		<plugins>
