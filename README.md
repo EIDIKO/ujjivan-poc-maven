@@ -81,3 +81,8 @@ To perform the build, change to the **.\Sum_API** folder and run the command:
 
 # mqsideploy  
 `mqsideploy -i localhost -p 7600 -a C:\Users\tonda\Downloads\ace-maven-plugin-main\ace-maven-plugin-main\samples\SumAPI\Sum_API\target\ace\Sum_API-1.0.0.bar` 
+
+
+# Start IntegrationServer  
+
+`IntegrationServer --work-dir C:\Users\tonda\IBM\ACET12\workspace\TEST_SERVER`
