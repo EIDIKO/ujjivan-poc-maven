@@ -56,7 +56,7 @@ jobs:
         run: |
           mvn clean package -f AceTesting/pom.xml         
   ACE-CD-UAT-TEST:
-    needs: [ACE-DEV-TEST]
+    needs: [ACE-CD-DEV-TEST]
     runs-on: self-hosted
     environment: 
       name: UAT
@@ -78,7 +78,7 @@ jobs:
         run: |
           mvn clean package -f AceTesting/pom.xml
   ACE-CD-PROD-TEST:
-    needs: [ACE-UAT-TEST]
+    needs: [ACE-CD-UAT-TEST]
     runs-on: self-hosted
     environment: 
       name: PROD
