@@ -28,6 +28,26 @@ public class SumApiTest extends BaseTest {
         test.fail("Step 2: This is a fail step");
     }
     
+	@Test
+    public void testSumApi() {
+        given()
+            .contentType("application/json")
+            .body("{\"number2\": 9, \"number1\": 2}")
+        .when()
+            .post(BASE_URL+ "/sum")
+        .then()
+            .statusCode(200)
+            .body("sum", equalTo(11))
+            .body("prime", equalTo(false));
+        
+        ExtentTest test = extent.createTest("SampleTest", "This is a sample Extent Report test");
+
+        // Log test steps or information
+        test.pass("Step 1: This is a pass step");
+        test.fail("Step 2: This is a fail step");
+    }
+	
+	
     @Test
     public void testSubApi() {
         given()
