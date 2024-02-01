@@ -19,7 +19,7 @@
 		<ace.arg4>-p</ace.arg4>
 		<ace.arg5>7600</ace.arg5>
 		<ace.arg6>-a</ace.arg6>
-		<ace.arg7>downloaded-artifact\Sum_API-1.0.0.bar</ace.arg7>
+		<ace.arg7>C:\Users\tonda\Desktop\GITT\REPO_RUNNER\ujjivan-poc-maven\downloaded-artifact\Sum_API-1.0.0.bar</ace.arg7>
 		<ace.arg8>EIDIKO-UJJIVAN-DEMO</ace.arg8>
 	</properties>
 	<build>
