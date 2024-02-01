@@ -44,9 +44,6 @@ jobs:
     steps:
       - name: Checkout Current Repo
         uses: actions/checkout@v2
-      - name: Running Test Cases on DEV
-        run: |
-          mvn clean package -f AceTesting/pom.xml
       - name: Download and Extract bar file
         uses: actions/download-artifact@v2
         with:
@@ -54,7 +51,13 @@ jobs:
           path: ${{ runner.workspace }}/downloaded-artifact
       - name: List Downloaded Folder
         run: |
-          ls ${{ runner.workspace }}/downloaded-artifact          
+          ls ${{ runner.workspace }}/downloaded-artifact  
+      - name: Deploy on DEV
+        run: |
+          mqsideploy -i localhost -p 7600 -a downloaded-artifact\Sum_API-1.0.0.bar          
+      - name: Running Test Cases on DEV
+        run: |
+          mvn clean package -f AceTesting/pom.xml         
   ACE-UAT-TEST:
     needs: [ACE-DEV-TEST]
     runs-on: self-hosted
@@ -63,18 +66,20 @@ jobs:
     steps:
       - name: Checkout Current Repo
         uses: actions/checkout@v2
-      - name: Running Test Cases on UAT
-        run: |
-          mvn clean package -f AceTesting/pom.xml
       - name: Download and Extract bar file
         uses: actions/download-artifact@v2
         with:
           name: ace-package
           path: ${{ runner.workspace }}/downloaded-artifact
-
       - name: List Downloaded Folder
         run: |
-          ls ${{ runner.workspace }}/downloaded-artifact
+          ls ${{ runner.workspace }}/downloaded-artifact  
+      - name: Deploy on UAT
+        run: |
+          mqsideploy -i localhost -p 7600 -a downloaded-artifact\Sum_API-1.0.0.bar          
+      - name: Running Test Cases on UAT
+        run: |
+          mvn clean package -f AceTesting/pom.xml
   ACE-PROD-TEST:
     needs: [ACE-UAT-TEST]
     runs-on: self-hosted
@@ -83,15 +88,17 @@ jobs:
     steps:
       - name: Checkout Current Repo
         uses: actions/checkout@v2
-      - name: Running Test Cases on PROD
-        run: |
-          mvn clean package -f AceTesting/pom.xml
       - name: Download and Extract bar file
         uses: actions/download-artifact@v2
         with:
           name: ace-package
           path: ${{ runner.workspace }}/downloaded-artifact
-
       - name: List Downloaded Folder
         run: |
-          ls ${{ runner.workspace }}/downloaded-artifact          
+          ls ${{ runner.workspace }}/downloaded-artifact  
+      - name: Deploy on PROD
+        run: |
+          mqsideploy -i localhost -p 7600 -a downloaded-artifact\Sum_API-1.0.0.bar          
+      - name: Running Test Cases on PROD
+        run: |
+          mvn clean package -f AceTesting/pom.xml
