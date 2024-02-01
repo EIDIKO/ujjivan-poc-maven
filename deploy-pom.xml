@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.eidiko</groupId> <!-- change it to your preference -->
+	<artifactId>Sum_API</artifactId> <!-- change it to your preference -->
+	<version>1.0</version>
+
+	<properties>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<ace.executable>C:\Program Files\IBM\ACE\12.0.8.0\ace.cmd</ace.executable>
+		<ace.arg1>mqsideploy</ace.arg1>
+		<ace.arg2>-i</ace.arg2>
+		<ace.arg3>localhost</ace.arg3>
+		<ace.arg4>-p</ace.arg4>
+		<ace.arg5>7600</ace.arg5>
+		<ace.arg6>-a</ace.arg6>
+		<ace.arg7>downloaded-artifact\Sum_API-1.0.0.bar</ace.arg7>
+		<ace.arg8>EIDIKO-UJJIVAN-DEMO</ace.arg8>
+	</properties>
+	<build>
+		<plugins>
+
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+				<version>3.0.0</version>
+				<executions>
+					<execution>
+						<id>create-bar</id>
+						<phase>package</phase>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>${ace.executable}</executable>
+							<arguments>
+								<argument>${ace.arg1}</argument>
+								<argument>${ace.arg2}</argument>
+								<argument>${ace.arg3}</argument>
+								<argument>${ace.arg4}</argument>
+								<argument>${ace.arg5}</argument>
+								<argument>${ace.arg6}</argument>
+								<argument>${ace.arg7}</argument>
+							</arguments>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>

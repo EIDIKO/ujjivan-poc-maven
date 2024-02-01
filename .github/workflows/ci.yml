@@ -54,7 +54,7 @@ jobs:
           ls ${{ runner.workspace }}/downloaded-artifact  
       - name: Deploy on DEV
         run: |
-          mqsideploy -i localhost -p 7600 -a downloaded-artifact\Sum_API-1.0.0.bar          
+          mvn clean package -f deploy-pom.xml           
       - name: Running Test Cases on DEV
         run: |
           mvn clean package -f AceTesting/pom.xml         
@@ -76,7 +76,7 @@ jobs:
           ls ${{ runner.workspace }}/downloaded-artifact  
       - name: Deploy on UAT
         run: |
-          mqsideploy -i localhost -p 7600 -a downloaded-artifact\Sum_API-1.0.0.bar          
+          mvn clean package -f deploy-pom.xml           
       - name: Running Test Cases on UAT
         run: |
           mvn clean package -f AceTesting/pom.xml
@@ -98,7 +98,7 @@ jobs:
           ls ${{ runner.workspace }}/downloaded-artifact  
       - name: Deploy on PROD
         run: |
-          mqsideploy -i localhost -p 7600 -a downloaded-artifact\Sum_API-1.0.0.bar          
+          mvn clean package -f deploy-pom.xml          
       - name: Running Test Cases on PROD
         run: |
           mvn clean package -f AceTesting/pom.xml
