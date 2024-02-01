@@ -1,0 +1,2 @@
+INDEX VERSION 1.131+C:\Users\tonda\Downloads\ace-maven-plugin-main\ace-maven-plugin-main\samples\SumAPI\.metadata\.plugins\org.eclipse.jdt.core
+3445436473.index

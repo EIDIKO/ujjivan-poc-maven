@@ -1,0 +1,231 @@
+!SESSION 2024-02-01 10:43:05.867 -----------------------------------------------
+eclipse.buildId=4.15.0.I20200420-1602
+java.fullversion=8.0.7.11 - pwa6480sr7fp11-20220601_01(SR7 FP11)
+JRE 1.8.0 Windows 11 amd64-64-Bit Compressed References 20220511_28614 (JIT enabled, AOT enabled)
+OpenJ9   - 844d750
+OMR      - d297a72
+IBM      - 7175f82
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -showlocation -product com.ibm.etools.msgbroker.tooling.ide -application com.ibm.etools.mft.bar.cmdline.mqsicreatebar -b C:\Users\tonda\Downloads\ace-maven-plugin-main\ace-maven-plugin-main\samples\SumAPI\Sum_API\target\ace\Sum_API-1.0.0.bar -cleanBuild -deployAsSource -a Sum_API -trace -v C:\Users\tonda\Downloads\ace-maven-plugin-main\ace-maven-plugin-main\samples\SumAPI\Sum_API\target\bar-compile-trace.txt
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -showlocation -product com.ibm.etools.msgbroker.tooling.ide -application com.ibm.etools.mft.bar.cmdline.mqsicreatebar -data C:\Users\tonda\Downloads\ace-maven-plugin-main\ace-maven-plugin-main\samples\SumAPI\Sum_API\.. -b C:\Users\tonda\Downloads\ace-maven-plugin-main\ace-maven-plugin-main\samples\SumAPI\Sum_API\target\ace\Sum_API-1.0.0.bar -cleanBuild -deployAsSource -a Sum_API -trace -v C:\Users\tonda\Downloads\ace-maven-plugin-main\ace-maven-plugin-main\samples\SumAPI\Sum_API\target\bar-compile-trace.txt
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-02-01 10:43:07.296
+!MESSAGE Both 'com.ibm.etools.mft.fcb' and 'com.ibm.etools.mft.gef.emf' register a package for 'http://www.ibm.com/wbi/2005/eflow_utility'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-02-01 10:43:07.296
+!MESSAGE Both 'com.ibm.etools.mft.gef.emf' and 'com.ibm.etools.mft.gef.emf' register a package for 'http://www.ibm.com/wbi/2005/eflow_utility'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-02-01 10:43:07.296
+!MESSAGE Both 'com.ibm.etools.mft.fcb' and 'com.ibm.etools.mft.pattern.capture.annotation' register a package for 'http://www.ibm.com/patternAnnotation/2010'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-02-01 10:43:07.311
+!MESSAGE Both 'com.ibm.etools.mft.gef.emf' and 'org.eclipse.emf.ecore' register a package for 'http://www.eclipse.org/emf/2002/Ecore'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-02-01 10:43:07.311
+!MESSAGE Both 'com.ibm.etools.javaee.core' and 'com.ibm.etools.mft.service.model' register an extension parser for 'application'
+
+!ENTRY com.ibm.etools.mft.uri 0 0 2024-02-01 10:43:15.879
+!MESSAGE 
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-02-01 10:43:18.344
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-02-01 10:43:18.344
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-02-01 10:43:20.592
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-02-01 10:43:20.592
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-02-01 10:43:32.457
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-02-01 10:43:32.457
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-02-01 10:43:43.724
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-02-01 10:43:43.739
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-02-01 10:43:56.230
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-02-01 10:43:56.246
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-02-01 10:44:08.872
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-02-01 10:44:08.872
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-02-01 10:44:22.441
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-02-01 10:44:22.441
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-02-01 10:44:35.944
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-02-01 10:44:35.944
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.core.resources 2 10035 2024-02-01 10:44:52.493
+!MESSAGE The workspace will exit with unsaved changes in this session.
+!SESSION 2024-02-01 10:45:38.038 -----------------------------------------------
+eclipse.buildId=4.15.0.I20200420-1602
+java.fullversion=8.0.7.11 - pwa6480sr7fp11-20220601_01(SR7 FP11)
+JRE 1.8.0 Windows 11 amd64-64-Bit Compressed References 20220511_28614 (JIT enabled, AOT enabled)
+OpenJ9   - 844d750
+OMR      - d297a72
+IBM      - 7175f82
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -showlocation -product com.ibm.etools.msgbroker.tooling.ide -application com.ibm.etools.mft.bar.cmdline.mqsicreatebar -b C:\Users\tonda\Downloads\ace-maven-plugin-main\ace-maven-plugin-main\samples\SumAPI\Sum_API\target\ace\Sum_API-1.0.0.bar -cleanBuild -deployAsSource -a Sum_API -trace -v C:\Users\tonda\Downloads\ace-maven-plugin-main\ace-maven-plugin-main\samples\SumAPI\Sum_API\target\bar-compile-trace.txt
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -showlocation -product com.ibm.etools.msgbroker.tooling.ide -application com.ibm.etools.mft.bar.cmdline.mqsicreatebar -data C:\Users\tonda\Downloads\ace-maven-plugin-main\ace-maven-plugin-main\samples\SumAPI\Sum_API\.. -b C:\Users\tonda\Downloads\ace-maven-plugin-main\ace-maven-plugin-main\samples\SumAPI\Sum_API\target\ace\Sum_API-1.0.0.bar -cleanBuild -deployAsSource -a Sum_API -trace -v C:\Users\tonda\Downloads\ace-maven-plugin-main\ace-maven-plugin-main\samples\SumAPI\Sum_API\target\bar-compile-trace.txt
+
+!ENTRY org.eclipse.core.resources 2 10035 2024-02-01 10:45:39.065
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-02-01 10:45:39.241
+!MESSAGE Both 'com.ibm.etools.mft.fcb' and 'com.ibm.etools.mft.gef.emf' register a package for 'http://www.ibm.com/wbi/2005/eflow_utility'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-02-01 10:45:39.241
+!MESSAGE Both 'com.ibm.etools.mft.gef.emf' and 'com.ibm.etools.mft.gef.emf' register a package for 'http://www.ibm.com/wbi/2005/eflow_utility'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-02-01 10:45:39.241
+!MESSAGE Both 'com.ibm.etools.mft.fcb' and 'com.ibm.etools.mft.pattern.capture.annotation' register a package for 'http://www.ibm.com/patternAnnotation/2010'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-02-01 10:45:39.241
+!MESSAGE Both 'com.ibm.etools.mft.gef.emf' and 'org.eclipse.emf.ecore' register a package for 'http://www.eclipse.org/emf/2002/Ecore'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-02-01 10:45:39.257
+!MESSAGE Both 'com.ibm.etools.javaee.core' and 'com.ibm.etools.mft.service.model' register an extension parser for 'application'
+
+!ENTRY com.ibm.etools.mft.uri 0 0 2024-02-01 10:45:42.506
+!MESSAGE 
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-02-01 10:45:44.358
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-02-01 10:45:44.358
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-02-01 10:45:56.366
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-02-01 10:45:56.382
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-02-01 10:46:07.688
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-02-01 10:46:07.688
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-02-01 10:46:19.237
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-02-01 10:46:19.237
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-02-01 10:46:32.775
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-02-01 10:46:32.775
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-02-01 10:46:46.354
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-02-01 10:46:46.354
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-02-01 10:46:58.927
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-02-01 10:46:58.927
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.core.resources 2 10035 2024-02-01 10:47:15.028
+!MESSAGE The workspace will exit with unsaved changes in this session.
+!SESSION 2024-02-01 10:51:19.644 -----------------------------------------------
+eclipse.buildId=4.15.0.I20200420-1602
+java.fullversion=8.0.7.11 - pwa6480sr7fp11-20220601_01(SR7 FP11)
+JRE 1.8.0 Windows 11 amd64-64-Bit Compressed References 20220511_28614 (JIT enabled, AOT enabled)
+OpenJ9   - 844d750
+OMR      - d297a72
+IBM      - 7175f82
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -showlocation -product com.ibm.etools.msgbroker.tooling.ide -application com.ibm.etools.mft.bar.cmdline.mqsicreatebar -b C:\Users\tonda\Downloads\ace-maven-plugin-main\ace-maven-plugin-main\samples\SumAPI\Sum_API\target\ace\Sum_API-1.0.0.bar -cleanBuild -deployAsSource -a Sum_API -trace -v C:\Users\tonda\Downloads\ace-maven-plugin-main\ace-maven-plugin-main\samples\SumAPI\Sum_API\target\bar-compile-trace.txt
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -showlocation -product com.ibm.etools.msgbroker.tooling.ide -application com.ibm.etools.mft.bar.cmdline.mqsicreatebar -data C:\Users\tonda\Downloads\ace-maven-plugin-main\ace-maven-plugin-main\samples\SumAPI\Sum_API\.. -b C:\Users\tonda\Downloads\ace-maven-plugin-main\ace-maven-plugin-main\samples\SumAPI\Sum_API\target\ace\Sum_API-1.0.0.bar -cleanBuild -deployAsSource -a Sum_API -trace -v C:\Users\tonda\Downloads\ace-maven-plugin-main\ace-maven-plugin-main\samples\SumAPI\Sum_API\target\bar-compile-trace.txt
+
+!ENTRY org.eclipse.core.resources 2 10035 2024-02-01 10:51:20.639
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-02-01 10:51:20.814
+!MESSAGE Both 'com.ibm.etools.mft.fcb' and 'com.ibm.etools.mft.gef.emf' register a package for 'http://www.ibm.com/wbi/2005/eflow_utility'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-02-01 10:51:20.830
+!MESSAGE Both 'com.ibm.etools.mft.gef.emf' and 'com.ibm.etools.mft.gef.emf' register a package for 'http://www.ibm.com/wbi/2005/eflow_utility'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-02-01 10:51:20.830
+!MESSAGE Both 'com.ibm.etools.mft.fcb' and 'com.ibm.etools.mft.pattern.capture.annotation' register a package for 'http://www.ibm.com/patternAnnotation/2010'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-02-01 10:51:20.831
+!MESSAGE Both 'com.ibm.etools.mft.gef.emf' and 'org.eclipse.emf.ecore' register a package for 'http://www.eclipse.org/emf/2002/Ecore'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-02-01 10:51:20.831
+!MESSAGE Both 'com.ibm.etools.javaee.core' and 'com.ibm.etools.mft.service.model' register an extension parser for 'application'
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-02-01 10:51:24.691
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-02-01 10:51:24.695
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY com.ibm.etools.mft.uri 0 0 2024-02-01 10:51:25.832
+!MESSAGE 
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-02-01 10:51:39.909
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-02-01 10:51:39.909
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-02-01 10:51:51.212
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-02-01 10:51:51.212
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-02-01 10:52:02.717
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-02-01 10:52:02.717
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-02-01 10:52:15.294
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-02-01 10:52:15.294
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-02-01 10:52:28.787
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-02-01 10:52:28.801
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-02-01 10:52:42.308
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-02-01 10:52:42.308
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.core.resources 2 10035 2024-02-01 10:52:58.407
+!MESSAGE The workspace will exit with unsaved changes in this session.

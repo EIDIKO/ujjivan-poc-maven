@@ -1,0 +1,4 @@
+CREATE PROCEDURE TestMath ()
+RETURNS BOOLEAN
+LANGUAGE JAVA
+EXTERNAL NAME "com.ibm.ace.util.MathUtil.test";

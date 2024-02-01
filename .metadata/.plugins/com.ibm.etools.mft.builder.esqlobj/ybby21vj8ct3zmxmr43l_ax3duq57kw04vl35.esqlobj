@@ -1,0 +1,4 @@
+CREATE PROCEDURE GetCurrentTimestamp ()
+RETURNS CHARACTER
+LANGUAGE JAVA
+EXTERNAL NAME "com.ibm.ace.util.TimeUtil.getCurrentTimestamp";

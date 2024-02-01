@@ -1,0 +1,1 @@
+ C:\PROGRA~1\IBM\ACE\12.0.8.0\server\bin/mqsiprofile&&mqsireadbar -b C:\Users\tonda\Downloads\ace-maven-plugin-main\ace-maven-plugin-main\samples\SumAPI\PolicyProject\target\ace\PolicyProject-1.0.0.bar -r

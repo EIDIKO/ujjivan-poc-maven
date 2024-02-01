@@ -1,0 +1,7 @@
+CREATE PROCEDURE CalculateSum(
+IN valueA REFERENCE,
+IN valueB REFERENCE,
+OUT sum INTEGER)
+BEGIN
+	SET sum = valueA + valueB;
+END;
