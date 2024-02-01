@@ -86,3 +86,8 @@ To perform the build, change to the **.\Sum_API** folder and run the command:
 # Start IntegrationServer  
 
 `IntegrationServer --work-dir C:\Users\tonda\IBM\ACET12\workspace\TEST_SERVER`
+
+
+# Check IntegrationServer  is Running
+
+`curl -X GET http://localhost:7600/apiv2`

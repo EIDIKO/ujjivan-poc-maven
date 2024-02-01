@@ -20,10 +20,10 @@ jobs:
           mvn clean package -f Java_LIB/pom.xml
       - name: Building bar file for Calculator_LIB
         run: |
-          echo "mvn clean package -f Calculator_LIB/pom.xml"
+          mvn clean package -f Calculator_LIB/pom.xml
       - name: Building bar file for Sum_API
         run: |
-          echo "mvn clean package -f Sum_API/pom.xml"
+          mvn clean package -f Sum_API/pom.xml
       - name: Running Test Cases
         run: |
           mvn clean package -f AceTesting/pom.xml          
