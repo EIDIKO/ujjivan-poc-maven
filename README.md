@@ -73,3 +73,11 @@ To perform the build, change to the **.\Sum_API** folder and run the command:
 
 # Known Limitations  
 - As of today only the ace-maven-plugin only supports the dependency handling / unpacking of SharedLibs. 
+
+
+# mqsicreatebar  
+`mqsicreatebar -data C:\Users\tonda\Downloads\SampleIIBApp -b C:\Users\tonda\IBM\ACET12\workspace\MPOCJavaProject\target\SamplApp.bar -a SamplApp` 
+
+
+# mqsideploy  
+`mqsideploy -i localhost -p 7600 -a C:\Users\tonda\Downloads\ace-maven-plugin-main\ace-maven-plugin-main\samples\SumAPI\Sum_API\target\ace\Sum_API-1.0.0.bar` 
