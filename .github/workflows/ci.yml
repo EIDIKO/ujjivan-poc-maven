@@ -3,7 +3,8 @@ on:
   push:
     branches: [ main ]
 env:
- BAR_STORE: target\SamplApp-1.0.bar
+ BAR_STORE: Sum_API\target\ace\Sum_API-1.0.0.bar
+ BAR_STORE-1: target\SamplApp-1.0.bar
 jobs:
   ACE-CI:
     runs-on: self-hosted
@@ -45,7 +46,15 @@ jobs:
         uses: actions/checkout@v2
       - name: Running Test Cases on DEV
         run: |
-          mvn clean package -f AceTesting/pom.xml  
+          mvn clean package -f AceTesting/pom.xml
+      - name: Download and Extract bar file
+        uses: actions/download-artifact@v2
+        with:
+          name: ace-package
+          path: ${{ runner.workspace }}/downloaded-artifact
+      - name: List Downloaded Folder
+        run: |
+          ls ${{ runner.workspace }}/downloaded-artifact          
   ACE-UAT-TEST:
     needs: [ACE-DEV-TEST]
     runs-on: self-hosted
@@ -57,6 +66,15 @@ jobs:
       - name: Running Test Cases on UAT
         run: |
           mvn clean package -f AceTesting/pom.xml
+      - name: Download and Extract bar file
+        uses: actions/download-artifact@v2
+        with:
+          name: ace-package
+          path: ${{ runner.workspace }}/downloaded-artifact
+
+      - name: List Downloaded Folder
+        run: |
+          ls ${{ runner.workspace }}/downloaded-artifact
   ACE-PROD-TEST:
     needs: [ACE-UAT-TEST]
     runs-on: self-hosted
@@ -67,4 +85,13 @@ jobs:
         uses: actions/checkout@v2
       - name: Running Test Cases on PROD
         run: |
-          mvn clean package -f AceTesting/pom.xml            
+          mvn clean package -f AceTesting/pom.xml
+      - name: Download and Extract bar file
+        uses: actions/download-artifact@v2
+        with:
+          name: ace-package
+          path: ${{ runner.workspace }}/downloaded-artifact
+
+      - name: List Downloaded Folder
+        run: |
+          ls ${{ runner.workspace }}/downloaded-artifact          
