@@ -38,7 +38,7 @@ public class SumApiTest extends BaseTest {
         .then()
             .statusCode(200)
             .body("sum", equalTo(11))
-            .body("prime", equalTo(false));
+            .body("prime", equalTo(true));
         
         ExtentTest test = extent.createTest("SampleTest", "This is a sample Extent Report test");
 
