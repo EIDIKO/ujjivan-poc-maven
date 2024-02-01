@@ -12,9 +12,18 @@ jobs:
       - name: List Folders
         run: |
           ls
-      - name: Building bar file
+      - name: Building bar file for SamplApp
         run: |
           mvn clean package
+      - name: Building bar file for Java_LIB
+        run: |
+          mvn clean package -f Java_LIB/pom.xml
+      - name: Building bar file for Calculator_LIB
+        run: |
+          mvn clean package -f Calculator_LIB/pom.xml
+      - name: Building bar file for Sum_API
+        run: |
+          mvn clean package -f Sum_API/pom.xml
       - name: Running Test Cases
         run: |
           mvn clean package -f AceTesting/pom.xml          
