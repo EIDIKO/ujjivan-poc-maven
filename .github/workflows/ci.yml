@@ -35,3 +35,36 @@ jobs:
         with:
           name: ace-package
           path: ${{ env.BAR_STORE }}
+  ACE-DEV-TEST:
+    needs: [ACE-CI]
+    runs-on: self-hosted
+    environment: 
+      name: DEV
+    steps:
+      - name: Checkout Current Repo
+        uses: actions/checkout@v2
+      - name: Running Test Cases on DEV
+        run: |
+          mvn clean package -f AceTesting/pom.xml  
+  ACE-UAT-TEST:
+    needs: [ACE-DEV-TEST]
+    runs-on: self-hosted
+    environment: 
+      name: UAT
+    steps:
+      - name: Checkout Current Repo
+        uses: actions/checkout@v2
+      - name: Running Test Cases on UAT
+        run: |
+          mvn clean package -f AceTesting/pom.xml
+  ACE-PROD-TEST:
+    needs: [ACE-UAT-TEST]
+    runs-on: self-hosted
+    environment: 
+      name: PROD
+    steps:
+      - name: Checkout Current Repo
+        uses: actions/checkout@v2
+      - name: Running Test Cases on PROD
+        run: |
+          mvn clean package -f AceTesting/pom.xml            
