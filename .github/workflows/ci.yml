@@ -9,7 +9,7 @@ jobs:
     runs-on: self-hosted
     steps:
       - uses: actions/checkout@v2
-      - name: List Folders
+      - name: List Folder
         run: |
           ls
       - name: Building bar file for SamplApp
