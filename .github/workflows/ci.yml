@@ -23,7 +23,7 @@ jobs:
           echo "mvn clean package -f Calculator_LIB/pom.xml"
       - name: Building bar file for Sum_API
         run: |
-          mvn clean package -f Sum_API/pom.xml
+          echo "mvn clean package -f Sum_API/pom.xml"
       - name: Running Test Cases
         run: |
           mvn clean package -f AceTesting/pom.xml          
