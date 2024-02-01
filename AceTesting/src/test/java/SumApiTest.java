@@ -10,7 +10,7 @@ public class SumApiTest extends BaseTest {
     private final String BASE_URL = "http://localhost:7800/sum_api/v1";
 
     @Test
-    public void testSumApi() {
+    public void testSumApione() {
         given()
             .contentType("application/json")
             .body("{\"number2\": 2, \"number1\": 2}")
