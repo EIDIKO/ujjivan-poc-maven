@@ -24,6 +24,9 @@ jobs:
       - name: Building bar file for Sum_API
         run: |
           mvn clean package -f Sum_API/pom.xml
+      - name: Modules Build
+        run: |
+          mvn clean package -f complete-build.xml
       - name: Running Test Cases
         run: |
           mvn clean package -f AceTesting/pom.xml          
