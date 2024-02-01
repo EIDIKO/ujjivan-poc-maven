@@ -27,16 +27,13 @@ jobs:
           mvn clean package -f Sum_API/pom.xml
       - name: Modules Build
         run: |
-          mvn clean package -f complete-build.xml
-      - name: Running Test Cases
-        run: |
-          mvn clean package -f AceTesting/pom.xml          
+          mvn clean package -f complete-build.xml         
       - name: Upload bar file ZIP package
         uses: actions/upload-artifact@v2
         with:
           name: ace-package
           path: ${{ env.BAR_STORE }}
-  ACE-DEV-TEST:
+  ACE-CD-DEV-TEST:
     needs: [ACE-CI]
     runs-on: self-hosted
     environment: 
@@ -58,7 +55,7 @@ jobs:
       - name: Running Test Cases on DEV
         run: |
           mvn clean package -f AceTesting/pom.xml         
-  ACE-UAT-TEST:
+  ACE-CD-UAT-TEST:
     needs: [ACE-DEV-TEST]
     runs-on: self-hosted
     environment: 
@@ -80,7 +77,7 @@ jobs:
       - name: Running Test Cases on UAT
         run: |
           mvn clean package -f AceTesting/pom.xml
-  ACE-PROD-TEST:
+  ACE-CD-PROD-TEST:
     needs: [ACE-UAT-TEST]
     runs-on: self-hosted
     environment: 
