@@ -12,6 +12,7 @@ jobs:
       - name: Building bar file
         run: |
           mvn clean package
+          ls -lrt
       - name: Upload bar file ZIP package
         uses: actions/upload-artifact@v2
         with:
