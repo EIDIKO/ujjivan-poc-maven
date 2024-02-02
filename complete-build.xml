@@ -8,8 +8,8 @@
 
     <modules>
       <module>./Tirapa_Eidiko_Java_LIB</module>
-      <module>./Tirapa_Eidiko_Calculator_LIB</module>
+      <module>./Calculator_LIB</module>
       <module>./PolicyProject</module>
-      <module>./Tirapa_Eidiko_Sum_API</module>
+      <module>./Sum_API</module>
     </modules>
 </project>

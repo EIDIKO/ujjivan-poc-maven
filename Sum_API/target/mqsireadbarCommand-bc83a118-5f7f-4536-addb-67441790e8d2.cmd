@@ -1,0 +1,1 @@
+ C:\PROGRA~1\IBM\ACE\12.0.8.0\server\bin/mqsiprofile&&mqsireadbar -b C:\Users\tonda\Desktop\NODE\ujjivan-poc-maven\Sum_API\target\ace\Sum_API-1.0.0.bar -r

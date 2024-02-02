@@ -3,7 +3,7 @@ on:
   push:
     branches: [ main ]
 env:
- BAR_STORE: Tirapa_Eidiko_Sum_API\target\ace\Sum_API-1.0.0.bar
+ BAR_STORE: Sum_API\target\ace\Sum_API-1.0.0.bar
  BAR_STORE-1: target\SamplApp-1.0.bar
 jobs:
   ACE-CI:
@@ -21,10 +21,10 @@ jobs:
           mvn clean package -f Tirapa_Eidiko_Java_LIB/pom.xml
       - name: Building bar file for Calculator_LIB
         run: |
-          mvn clean package -f Tirapa_Eidiko_Calculator_LIB/pom.xml
+          mvn clean package -f Calculator_LIB/pom.xml
       - name: Building bar file for Sum_API
         run: |
-          mvn clean package -f Tirapa_Eidiko_Sum_API/pom.xml
+          mvn clean package -f Sum_API/pom.xml
       - name: Modules Build
         run: |
           mvn clean package -f complete-build.xml         
