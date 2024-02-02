@@ -35,6 +35,29 @@ public class SumApiTwoTest extends BaseTest {
         test.pass("API request successful");
         LOGGER.info("API request successful");
     }
+	
+	
+	@Test
+    public void testSumApitwo() {
+    	
+    	ExtentTest test = extent.createTest("testSumApione", "Testing Sum API with numbers 2 and 2");
+        
+        // rest of your test code ...
+        test.info("Sending request to Sum API with numbers 2 and 2");
+        LOGGER.info("Sending request to Sum API with numbers 2 and 2");
+        given()
+            .contentType("application/json")
+            .body("{\"number2\": 3, \"number1\": 3}")
+        .when()
+            .post(BASE_URL + "/sum")
+        .then()
+            .statusCode(200)
+            .body("sum", equalTo(6))
+            .body("prime", equalTo(false));
+
+        test.pass("API request successful");
+        LOGGER.info("API request successful");
+    }
 
     @Test
     public void testSumApi() {
