@@ -91,3 +91,8 @@ To perform the build, change to the **.\Sum_API** folder and run the command:
 # Check IntegrationServer  is Running
 
 `curl -X GET http://localhost:7600/apiv2`
+
+
+# Start IntegrationServer  is Running
+
+`curl -X GET http://localhost:7600/apiv2`
