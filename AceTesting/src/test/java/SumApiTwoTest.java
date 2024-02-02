@@ -41,8 +41,6 @@ public class SumApiTwoTest extends BaseTest {
     public void testSumApitwo() {
     	
     	ExtentTest test = extent.createTest("testSumApione", "Testing Sum API with numbers 2 and 2");
-        
-        // rest of your test code ...
         test.info("Sending request to Sum API with numbers 2 and 2");
         LOGGER.info("Sending request to Sum API with numbers 2 and 2");
         given()
