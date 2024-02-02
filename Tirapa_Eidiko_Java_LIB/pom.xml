@@ -7,7 +7,7 @@
 	<artifactId>Java_LIB</artifactId>
 	<!-- <packaging>jar</packaging> -->
 	<properties>
-		<sharedLibProject.path>../Calculator_LIB</sharedLibProject.path>
+		<sharedLibProject.path>../Tirapa_Eidiko_Calculator_LIB</sharedLibProject.path>
 		<maven.compiler.plugin.version>3.3</maven.compiler.plugin.version>
 		<maven.jar.plugin.version>2.4</maven.jar.plugin.version>
 		<maven.install.plugin.version>2.5.2</maven.install.plugin.version>
