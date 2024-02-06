@@ -92,6 +92,8 @@ To perform the build, change to the **.\Sum_API** folder and run the command:
 
 `curl -X GET http://localhost:7600/apiv2`
 
+# RUN on PowerShell Window
+`Set-ExecutionPolicy RemoteSigned`
 
 # Start IntegrationServer  is Running TEST
 
