@@ -17,7 +17,7 @@
 		<ace.cn.arg1>mqsicreatebroker</ace.cn.arg1>
 		<ace.cn.arg2>${project.artifactId}</ace.cn.arg2>
 		<ace.cn.arg3>-P</ace.cn.arg3>
-		<ace.cn.arg4>4414</ace.cn.arg4>
+		<ace.cn.arg4>4418</ace.cn.arg4>
 		
 		
 		<ace.sn.start>mqsistart</ace.sn.start>
@@ -53,9 +53,7 @@
 		<ace.nd.arg4>NS1</ace.nd.arg4>
 		<ace.nd.arg5>-a</ace.nd.arg5>
 		<ace.nd.sl>Calculator_LIB\target\ace\Calculator_LIB-1.0.0.bar</ace.nd.sl>
-		<ace.nd.api>Sum_API\target\ace\Sum_API-1.0.0.bar</ace.nd.api>
-
-		
+		<ace.nd.api>Sum_API\target\ace\Sum_API-1.0.0.bar</ace.nd.api>		
 	</properties>
 	<build>
 		<plugins>
@@ -183,34 +181,6 @@
 								<argument>${ace.nd.arg4}</argument>
 								<argument>${ace.nd.arg5}</argument>
 								<argument>${ace.nd.api}</argument>
-							</arguments>
-						</configuration>
-					</execution>
-					<execution>
-						<id>stop-node</id>
-						<phase>package</phase>
-						<goals>
-							<goal>exec</goal>
-						</goals>
-						<configuration>
-							<executable>${ace.executable}</executable>
-							<arguments>
-								<argument>${ace.sn.stop}</argument>
-								<argument>${ace.sn.arg2}</argument>
-							</arguments>
-						</configuration>
-					</execution>
-					<execution>
-						<id>delete-node</id>
-						<phase>package</phase>
-						<goals>
-							<goal>exec</goal>
-						</goals>
-						<configuration>
-							<executable>${ace.executable}</executable>
-							<arguments>
-								<argument>${ace.sn.delete}</argument>
-								<argument>${ace.sn.arg2}</argument>
 							</arguments>
 						</configuration>
 					</execution>

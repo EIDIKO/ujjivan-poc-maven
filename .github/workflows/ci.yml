@@ -7,6 +7,9 @@ env:
  BAR_STORE-1: target\SamplApp-1.0.bar
 jobs:
   ACE-CI:
+    environment: 
+      name: LOCAL
+      url: "http://localhost:4418"
     runs-on: self-hosted
     steps:
       - uses: actions/checkout@v2
@@ -36,11 +39,22 @@ jobs:
       - name: Create, Start Integration Node & Server
         run: |
           mvn clean package -f create-integrationnode.xml 
+  ACE-DELETE-NODE:
+    environment: 
+      name: LOCAL
+      url: "http://localhost:4418"
+    runs-on: self-hosted
+    steps:
+      - uses: actions/checkout@v2
+      - name: Stop, Delete Integration Node & Server
+        run: |
+          mvn clean package -f delete-integrationnode.xml 
   ACE-CD-DEV-TEST:
     needs: [ACE-CI]
     runs-on: self-hosted
     environment: 
       name: DEV
+      url: "http://localhost:4418"
     steps:
       - name: Checkout Current Repo
         uses: actions/checkout@v2
