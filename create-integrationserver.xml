@@ -31,7 +31,7 @@
 		<ace.iss.start>IntegrationServer</ace.iss.start>
 		<ace.iss.arg1>-w</ace.iss.arg1>
 		<ace.iss.arg2>C:\${project.artifactId}</ace.iss.arg2>
-		<ace.iss.arg3>--name</ace.isa.arg3>
+		<ace.iss.arg3>--name</ace.iss.arg3>
 		<ace.iss.arg4>${project.artifactId}</ace.iss.arg4>
 		<ace.iss.arg5>--admin-rest-api</ace.iss.arg5>
 		<ace.iss.arg6>7606</ace.iss.arg6>
