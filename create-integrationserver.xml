@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.eidiko</groupId> <!-- change it to your preference -->
-	<artifactId>SUM_API</artifactId> <!-- change it to your preference -->
+	<artifactId>SUMAPI</artifactId> <!-- change it to your preference -->
 	<version>1.0</version>
 
 	<properties>
@@ -38,9 +38,18 @@
 		<ace.iss.arg7>--http-port-number</ace.iss.arg7>
 		<ace.iss.arg8>7888</ace.iss.arg8>
 		<ace.iss.arg9>--console-log</ace.iss.arg9>
+		<ace.iss.arg10>--stop-after-duration</ace.iss.arg10>
+		<ace.iss.arg11>100000</ace.iss.arg11>
 		
 		
-
+		<ace.is.stop>mqsistopmsgflow</ace.is.stop>
+		<ace.is.stop1>-i</ace.is.stop1>
+		<ace.is.stop2>localhost</ace.is.stop2>
+		<ace.is.stop3>-p</ace.is.stop3>
+		<ace.is.stop4>7606</ace.is.stop4>
+		
+		
+mqsistopmsgflow -i localhost -p 7606
 		<ace.nd.sl>Calculator_LIB\target\ace\Calculator_LIB-1.0.0.bar</ace.nd.sl>
 		<ace.nd.api>Sum_API\target\ace\Sum_API-1.0.0.bar</ace.nd.api>		
 	</properties>
@@ -61,14 +70,14 @@
 						<configuration>
 							<executable>${ace.executable}</executable>
 							<arguments>
-								<argument>$ace.is.arg1}</argument>
+								<argument>${ace.is.arg1}</argument>
 								<argument>${ace.is.arg2}</argument>
 							</arguments>
 						</configuration>
 					</execution>
 
-					<execution>
-						<id>create-node-integration-server</id>
+<!-- 					<execution>
+						<id>create-adminweruser-integration-server</id>
 						<phase>package</phase>
 						<goals>
 							<goal>exec</goal>
@@ -87,9 +96,9 @@
 
 							</arguments>
 						</configuration>
-					</execution>
+					</execution> -->
 					<execution>
-						<id>check-node-properties</id>
+						<id>start-integration-server</id>
 						<phase>package</phase>
 						<goals>
 							<goal>exec</goal>
@@ -110,6 +119,26 @@
 							</arguments>
 						</configuration>
 					</execution>
+					
+					
+<!-- 					<execution>
+						<id>stop-is-workdir</id>
+						<phase>package</phase>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>${ace.executable}</executable>
+							<arguments>
+								<argument>${ace.is.stop}</argument>
+								<argument>${ace.is.stop1}</argument>
+								<argument>${ace.is.stop2}</argument>
+								<argument>${ace.is.stop3}</argument>
+								<argument>${ace.is.stop4}</argument>
+
+							</arguments>
+						</configuration>
+					</execution> -->
 					
 					
 				</executions>
