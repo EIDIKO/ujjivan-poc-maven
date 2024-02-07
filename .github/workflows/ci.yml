@@ -47,6 +47,17 @@ jobs:
       - name: Create, Start Integration Node & Server
         run: |
           mvn clean package -f create-integrationnode.xml 
+  ACE-INSTALL-SERVER:
+    needs: [ACE-CI]
+    environment: 
+      name: LOCAL
+      url: "http://localhost:7606"
+    runs-on: self-hosted
+    steps:
+      - uses: actions/checkout@v2
+      - name: Create, Start Integration Node & Server
+        run: |
+          mvn clean package -f create-integrationserver.xml 
   ACE-UNINSTALL-NODE:
     needs: [ACE-INSTALL-NODE]
     environment: 
