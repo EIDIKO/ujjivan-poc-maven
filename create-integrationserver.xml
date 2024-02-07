@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.eidiko</groupId> <!-- change it to your preference -->
-	<artifactId>SUMAPI</artifactId> <!-- change it to your preference -->
+	<artifactId>API</artifactId> <!-- change it to your preference -->
 	<version>1.0</version>
 
 	<properties>
@@ -48,8 +48,6 @@
 		<ace.is.stop3>-p</ace.is.stop3>
 		<ace.is.stop4>7606</ace.is.stop4>
 		
-		
-mqsistopmsgflow -i localhost -p 7606
 		<ace.nd.sl>Calculator_LIB\target\ace\Calculator_LIB-1.0.0.bar</ace.nd.sl>
 		<ace.nd.api>Sum_API\target\ace\Sum_API-1.0.0.bar</ace.nd.api>		
 	</properties>
