@@ -114,6 +114,8 @@
 								<argument>${ace.iss.arg7}</argument>
 								<argument>${ace.iss.arg8}</argument>
 								<argument>${ace.iss.arg9}</argument>
+								<argument>${ace.iss.arg10}</argument>
+								<argument>${ace.iss.arg11}</argument>
 							</arguments>
 						</configuration>
 					</execution>
