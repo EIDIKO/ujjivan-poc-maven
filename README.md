@@ -118,7 +118,9 @@ To perform the build, change to the **.\Sum_API** folder and run the command:
  
  mqsichangeproperties MYBROKERTWO -b httplistener -o HTTPListener -n startListener -v true
  
- mqsistop MYBROKER`
+ mqsistop MYBROKER
+
+ mqsideletebroker MYBROKER`
 
 # Start IntegrationServer  is Running TEST
 

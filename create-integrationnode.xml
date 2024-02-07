@@ -20,7 +20,9 @@
 		<ace.cn.arg4>4414</ace.cn.arg4>
 		
 		
-		<ace.sn.arg1>mqsistart</ace.sn.arg1>
+		<ace.sn.start>mqsistart</ace.sn.start>
+		<ace.sn.stop>mqsistop</ace.sn.stop>
+		<ace.sn.delete>mqsideletebroker</ace.sn.delete>
 		<ace.sn.arg2>${project.artifactId}</ace.sn.arg2>
 		
 		
@@ -30,12 +32,13 @@
 		<ace.cnis.arg4>NS1</ace.cnis.arg4>
 		
 		
-		<ace.np.arg1>mqsireportproperties</ace.np.arg1>
+		<ace.np.check>mqsireportproperties</ace.np.check>
 		<ace.np.arg2>${project.artifactId}</ace.np.arg2>
 		<ace.np.arg3>-b</ace.np.arg3>
 		<ace.np.arg4>httplistener</ace.np.arg4>
 		<ace.np.arg5>-r</ace.np.arg5>
 		
+		<ace.np.change>mqsichangeproperties</ace.np.change>
 		<ace.np.arg6>-o</ace.np.arg6>
 		<ace.np.arg7>HTTPListener</ace.np.arg7>
 		<ace.np.arg8>-n</ace.np.arg8>
@@ -70,7 +73,7 @@
 						</configuration>
 					</execution>
 					<execution>
-						<id>start-bar</id>
+						<id>start-node</id>
 						<phase>package</phase>
 						<goals>
 							<goal>exec</goal>
@@ -78,7 +81,7 @@
 						<configuration>
 							<executable>${ace.executable}</executable>
 							<arguments>
-								<argument>${ace.sn.arg1}</argument>
+								<argument>${ace.sn.start}</argument>
 								<argument>${ace.sn.arg2}</argument>
 							</arguments>
 						</configuration>
@@ -108,7 +111,7 @@
 						<configuration>
 							<executable>${ace.executable}</executable>
 							<arguments>
-								<argument>${ace.np.arg1}</argument>
+								<argument>${ace.np.check}</argument>
 								<argument>${ace.np.arg2}</argument>
 								<argument>${ace.np.arg3}</argument>
 								<argument>${ace.np.arg4}</argument>
@@ -125,7 +128,7 @@
 						<configuration>
 							<executable>${ace.executable}</executable>
 							<arguments>
-								<argument>${ace.np.arg1}</argument>
+								<argument>${ace.np.change}</argument>
 								<argument>${ace.np.arg2}</argument>
 								<argument>${ace.np.arg3}</argument>
 								<argument>${ace.np.arg4}</argument>
@@ -135,6 +138,34 @@
 								<argument>${ace.np.arg9}</argument>
 								<argument>${ace.np.arg10}</argument>
 								<argument>${ace.np.arg11}</argument>
+							</arguments>
+						</configuration>
+					</execution>
+					<execution>
+						<id>stop-node</id>
+						<phase>package</phase>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>${ace.executable}</executable>
+							<arguments>
+								<argument>${ace.sn.stop}</argument>
+								<argument>${ace.sn.arg2}</argument>
+							</arguments>
+						</configuration>
+					</execution>
+					<execution>
+						<id>delete-node</id>
+						<phase>package</phase>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>${ace.executable}</executable>
+							<arguments>
+								<argument>${ace.sn.delete}</argument>
+								<argument>${ace.sn.arg2}</argument>
 							</arguments>
 						</configuration>
 					</execution>
