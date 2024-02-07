@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.eidiko</groupId> <!-- change it to your preference -->
+	<artifactId>SUM_API</artifactId> <!-- change it to your preference -->
+	<version>1.0</version>
+
+	<properties>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<ace.executable>C:\Program Files\IBM\ACE\12.0.8.0\ace.cmd</ace.executable>
+		
+		<ace.cn.arg1>mqsicreatebroker</ace.cn.arg1>
+		<ace.cn.arg2>${project.artifactId}</ace.cn.arg2>
+		<ace.cn.arg3>-P</ace.cn.arg3>
+		<ace.cn.arg4>4414</ace.cn.arg4>
+		
+		
+		<ace.sn.arg1>mqsistart</ace.sn.arg1>
+		<ace.sn.arg2>${project.artifactId}</ace.sn.arg2>
+		
+		
+		<ace.cnis.arg1>mqsicreateexecutiongroup</ace.cnis.arg1>
+		<ace.cnis.arg2>${project.artifactId}</ace.cnis.arg2>
+		<ace.cnis.arg3>-e</ace.cnis.arg3>
+		<ace.cnis.arg4>NS1</ace.cnis.arg4>
+		
+		
+		<ace.np.arg1>mqsireportproperties</ace.np.arg1>
+		<ace.np.arg2>${project.artifactId}</ace.np.arg2>
+		<ace.np.arg3>-b</ace.np.arg3>
+		<ace.np.arg4>httplistener</ace.np.arg4>
+		<ace.np.arg5>-r</ace.np.arg5>
+		
+		<ace.np.arg6>-o</ace.np.arg6>
+		<ace.np.arg7>HTTPListener</ace.np.arg7>
+		<ace.np.arg8>-n</ace.np.arg8>
+		<ace.np.arg9>startListener</ace.np.arg9>
+		<ace.np.arg10>-v</ace.np.arg10>
+		<ace.np.arg11>true</ace.np.arg11>
+
+		
+	</properties>
+	<build>
+		<plugins>
+
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+				<version>3.0.0</version>
+				<executions>
+					<execution>
+						<id>create-node</id>
+						<phase>package</phase>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>${ace.executable}</executable>
+							<arguments>
+								<argument>${ace.cn.arg1}</argument>
+								<argument>${ace.cn.arg2}</argument>
+								<argument>${ace.cn.arg3}</argument>
+								<argument>${ace.cn.arg4}</argument>
+							</arguments>
+						</configuration>
+					</execution>
+					<execution>
+						<id>start-bar</id>
+						<phase>package</phase>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>${ace.executable}</executable>
+							<arguments>
+								<argument>${ace.sn.arg1}</argument>
+								<argument>${ace.sn.arg2}</argument>
+							</arguments>
+						</configuration>
+					</execution>
+					<execution>
+						<id>create-node-integration-server</id>
+						<phase>package</phase>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>${ace.executable}</executable>
+							<arguments>
+								<argument>${ace.cnis.arg1}</argument>
+								<argument>${ace.cnis.arg2}</argument>
+								<argument>${ace.cnis.arg3}</argument>
+								<argument>${ace.cnis.arg4}</argument>
+							</arguments>
+						</configuration>
+					</execution>
+					<execution>
+						<id>check-node-properties</id>
+						<phase>package</phase>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>${ace.executable}</executable>
+							<arguments>
+								<argument>${ace.np.arg1}</argument>
+								<argument>${ace.np.arg2}</argument>
+								<argument>${ace.np.arg3}</argument>
+								<argument>${ace.np.arg4}</argument>
+								<argument>${ace.np.arg5}</argument>
+							</arguments>
+						</configuration>
+					</execution>
+					<execution>
+						<id>change-node-properties</id>
+						<phase>package</phase>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>${ace.executable}</executable>
+							<arguments>
+								<argument>${ace.np.arg1}</argument>
+								<argument>${ace.np.arg2}</argument>
+								<argument>${ace.np.arg3}</argument>
+								<argument>${ace.np.arg4}</argument>
+								<argument>${ace.np.arg6}</argument>
+								<argument>${ace.np.arg7}</argument>
+								<argument>${ace.np.arg8}</argument>
+								<argument>${ace.np.arg9}</argument>
+								<argument>${ace.np.arg10}</argument>
+								<argument>${ace.np.arg11}</argument>
+							</arguments>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>

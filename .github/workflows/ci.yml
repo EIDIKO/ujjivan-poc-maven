@@ -33,6 +33,9 @@ jobs:
         with:
           name: ace-package
           path: ${{ env.BAR_STORE }}
+      - name: Create, Start Integration Node & Server
+        run: |
+          mvn clean package -f create-integrationnode.xml 
   ACE-CD-DEV-TEST:
     needs: [ACE-CI]
     runs-on: self-hosted
