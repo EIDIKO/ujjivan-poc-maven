@@ -19,7 +19,7 @@
 
 		
 		
-		<ace.isa.admin>mqsiwebuseradmin</ace.is.admin>
+		<ace.isa.admin>mqsiwebuseradmin</ace.isa.admin>
 		<ace.isa.arg1>-w</ace.isa.arg1>
 		<ace.isa.arg2>C:\${project.artifactId}</ace.isa.arg2>
 		<ace.isa.arg3>-c</ace.isa.arg3>
