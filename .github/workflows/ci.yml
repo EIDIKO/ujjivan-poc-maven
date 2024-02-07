@@ -42,7 +42,7 @@ jobs:
   ACE-DELETE-NODE:
     needs: [ACE-CI]
     environment: 
-      name: LOCAL
+      name: DEV
       url: "http://localhost:4418"
     runs-on: self-hosted
     steps:
