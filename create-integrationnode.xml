@@ -51,6 +51,7 @@
 		<ace.nd.arg2>${project.artifactId}</ace.nd.arg2>
 		<ace.nd.arg3>-e</ace.nd.arg3>
 		<ace.nd.arg4>NS1</ace.nd.arg4>
+		<ace.nd.arg5>-a</ace.nd.arg5>
 		<ace.nd.sl>Calculator_LIB\target\ace\Calculator_LIB-1.0.0.bar</ace.nd.sl>
 		<ace.nd.api>Sum_API\target\ace\Sum_API-1.0.0.bar</ace.nd.api>
 
@@ -162,6 +163,7 @@
 								<argument>${ace.nd.arg2}</argument>
 								<argument>${ace.nd.arg3}</argument>
 								<argument>${ace.nd.arg4}</argument>
+								<argument>${ace.nd.arg5}</argument>
 								<argument>${ace.nd.sl}</argument>
 							</arguments>
 						</configuration>
@@ -179,6 +181,7 @@
 								<argument>${ace.nd.arg2}</argument>
 								<argument>${ace.nd.arg3}</argument>
 								<argument>${ace.nd.arg4}</argument>
+								<argument>${ace.nd.arg5}</argument>
 								<argument>${ace.nd.api}</argument>
 							</arguments>
 						</configuration>
