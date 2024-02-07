@@ -95,6 +95,31 @@ To perform the build, change to the **.\Sum_API** folder and run the command:
 # RUN on PowerShell Window
 `Set-ExecutionPolicy RemoteSigned`
 
+# INTEGRATION_SERVER:
+
+`mqsicreateworkdir C:\ACE_TIRAPA_WORKDIR
+ mqsiwebuseradmin -w C:\ACE_TIRAPA_WORKDIR -c -u tirapaeidiko -a tirapa-eidiko
+ IntegrationServer -w C:\ACE_TIRAPA_WORKDIR --name ACE_TIRAPA_WORKDIR --admin-rest-api 7602 --http-port-number 7900 --console-log`
+
+
+# INTEGRATION_NODE
+
+`mqsicreatebroker MYBROKER -P 441
+
+ mqsistart MYBROKER
+ 
+ mqsicreateexecutiongroup MYBROKER -e NS1
+ 
+ mqsicreateexecutiongroup MYBROKER -e NS2
+ 
+ mqsicreateexecutiongroup MYBROKER -e NS1
+ 
+ mqsireportproperties MYBROKERTWO -b httplistener -r
+ 
+ mqsichangeproperties MYBROKERTWO -b httplistener -o HTTPListener -n startListener -v true
+ 
+ mqsistop MYBROKER`
+
 # Start IntegrationServer  is Running TEST
 
 `curl -X GET http://localhost:7600/apiv2`
