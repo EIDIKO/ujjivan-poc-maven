@@ -16,8 +16,6 @@
 		
 		<ace.is.arg1>mqsicreateworkdir</ace.is.arg1>
 		<ace.is.arg2>C:\${project.artifactId}</ace.is.arg2>
-
-		
 		
 		<ace.isa.admin>mqsiwebuseradmin</ace.isa.admin>
 		<ace.isa.arg1>-w</ace.isa.arg1>
