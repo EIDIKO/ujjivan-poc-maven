@@ -17,6 +17,8 @@
 		<browser.arg1>/c</browser.arg1>
 		<browser.arg2>start</browser.arg2>
 		<browser.arg3>http://localhost:4417</browser.arg3>
+		<browser.arg4>http://localhost:4417/servers/NS1/rest-apis/Sum_API?tab=documentation</browser.arg4>
+		
 		
 		<ace.cn.arg1>mqsicreatebroker</ace.cn.arg1>
 		<ace.cn.arg2>${project.artifactId}</ace.cn.arg2>
@@ -59,6 +61,7 @@
 		<ace.nd.sl>Calculator_LIB\target\ace\Calculator_LIB-1.0.0.bar</ace.nd.sl>
 		<ace.nd.api>Sum_API\target\ace\Sum_API-1.0.0.bar</ace.nd.api>		
 	</properties>
+	
 	<build>
 		<plugins>
 
@@ -153,6 +156,21 @@
 						</configuration>
 					</execution>
 					<execution>
+                    <id>open-node-webui</id>
+                    <phase>package</phase>
+                    <goals>
+                        <goal>exec</goal>
+                    </goals>
+                    <configuration>
+                        <executable>${browser.executable}</executable>
+                        <arguments>
+                            <argument>${browser.arg1}</argument>
+                            <argument>${browser.arg2}</argument>
+                            <argument>${browser.arg3}</argument> 
+                        </arguments>
+                    </configuration>
+                </execution>
+					<execution>
 						<id>deploy-node-sharedlib</id>
 						<phase>package</phase>
 						<goals>
@@ -189,8 +207,9 @@
 						</configuration>
 					</execution>
 					
-					                <execution>
-                    <id>open-node-webui</id>
+				 
+				<execution>
+                    <id>open-rest-api-document</id>
                     <phase>package</phase>
                     <goals>
                         <goal>exec</goal>
@@ -200,7 +219,7 @@
                         <arguments>
                             <argument>${browser.arg1}</argument>
                             <argument>${browser.arg2}</argument>
-                            <argument>${browser.arg3}</argument> 
+                            <argument>${browser.arg4}</argument> 
                         </arguments>
                     </configuration>
                 </execution>
